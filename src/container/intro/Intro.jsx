@@ -5,7 +5,7 @@ import { meal } from '../../constant';
 
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false)
-  const vidRef = useRef();
+  const vidRef = useRef(null);
 
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo)
